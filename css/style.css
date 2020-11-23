@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+.main-content,
+.sidebar,
+footer {
+  padding: 2em;
+}
+
+header {
+  background: #41D3BD;
+}
+
+.main-content {
+  background: #DE6449;
+}
+
+.sidebar {
+  background: #407899;
+}
+
+footer {
+  background: #694D75;
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
