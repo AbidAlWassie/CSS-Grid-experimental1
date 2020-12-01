@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: #27272d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 2fr 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1px;
+}
+
+.container > div {
+  background: #0065ff;
+  text-align: center;
+}
+
+.container > div:nth-child(odd) {
+  background: #a605ff;
+}
+
+.nested-element {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nested-element > div {
+  background: #e4beff;
+  color: #151515;
+}
