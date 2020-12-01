@@ -8,7 +8,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr 2fr 1fr);
+  grid-template-columns: repeat(1, 1fr 1fr 1fr);
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 1px;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .container > div:nth-child(odd) {
-  background: #a605ff;
+  background: #ee0095;
 }
 
 .nested-element {
@@ -28,8 +28,15 @@ body {
 }
 
 .nested-element > div {
-  background: #e4beff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ec99cc;
   color: #151515;
+}
+
+.nested-element > div:nth-child(odd) {
+  background: #70a7ff;
 }
 
 /*# sourceMappingURL=grid.css.map */
