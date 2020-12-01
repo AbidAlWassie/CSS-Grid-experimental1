@@ -30,8 +30,26 @@ footer {
 }
 
 .grid-container {
-  display: grid;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 4.5em 1fr 4.5em;
+  grid-template-areas: "header header header" "...... main   ....." "...... side   ....." "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+footer {
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=style.css.map */

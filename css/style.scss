@@ -19,6 +19,40 @@ header { background: #41D3BD; }
 footer { background: #694D75;}
 
 .grid-container {
-  display: grid;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 4.5em 1fr 4.5em;
+  grid-template-areas:
+    "header header header"
+    "...... main   ....."
+    "...... side   ....."
+    "footer footer footer";
 }
+
+header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+footer {
+  grid-area: footer;
+}
+
+//header, footer {
+//  grid-column: 1 / 5;
+//}
+//
+//.main-content {
+//  grid-column: 2 / 3;
+//}
+//
+//.sidebar {
+//  grid-column: 3/4;
+//}
