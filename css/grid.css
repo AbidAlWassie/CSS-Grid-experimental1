@@ -13,6 +13,10 @@ body {
   grid-gap: 1px;
 }
 
+.box p {
+  font-weight: normal;
+}
+
 .container > div {
   background: #0065ff;
   text-align: center;
